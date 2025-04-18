@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT To Markdown",
+  "version": "1.0",
+  "description": "Extracts chat messages from ChatGPT and saves them to a markdown file.",
+  "permissions": ["activeTab", "downloads", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "developer": {
+    "name": "Gary Wee",
+    "url": "https://github.com/weegary"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["injected_ui.html"],
+      "matches": ["https://chatgpt.com/*"]
+    }
+  ]
+}
