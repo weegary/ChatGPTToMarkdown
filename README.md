@@ -3,7 +3,7 @@
 ## Meta
 This extension is developed by Gary Wee, with the assistance of Gemini 2.0 Flash. It can be installed in Google Chrome and Microsoft Edge.
 
-Date: 2024 Apr 18
+Date: 2025 Apr 18
 
 ## Description
 After installing the extension, a "Download Chat" button will appear on the website's top area. Clicking the button will prompt to download the markdown file.
